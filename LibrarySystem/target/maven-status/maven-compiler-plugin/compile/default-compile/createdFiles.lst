@@ -1,0 +1,6 @@
+com\johnabbott\test1\model\Book.class
+com\johnabbott\test1\configuration\WebAppInitializer.class
+com\johnabbott\test1\service\BookServiceImpl.class
+com\johnabbott\test1\controller\TestController.class
+com\johnabbott\test1\configuration\WebMvcConfig.class
+com\johnabbott\test1\service\BookService.class
