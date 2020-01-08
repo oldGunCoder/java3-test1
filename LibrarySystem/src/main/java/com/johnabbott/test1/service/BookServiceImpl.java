@@ -11,14 +11,25 @@ import com.johnabbott.test1.model.Book;
 public class BookServiceImpl implements BookService {
 	
 	
-	public List<Book> getBooks(){
+	public List<Book> getCSBooks(){
 		List<Book> books = new ArrayList<Book>();
 		
 		books.add(new Book("Computer Science", "Java Pro", 1188));
 		books.add(new Book("Computer Science", "Python Master", 1986));
+		
+		
+		return books;
+	}
+	
+	public List<Book> getNovelBooks(){
+		List<Book> books = new ArrayList<Book>();
+		
 		books.add(new Book("Novel", "New Life", 568));
-		books.add(new Book("Novel", "Catch me if you can", 769));
+		books.add(new Book("Novel", "Catch Me If You Can", 1168));
+		
 		
 		return books;
 	}
 }
+	
+

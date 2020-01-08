@@ -25,14 +25,25 @@ public class TestController {
 		return mv;
 	}
 
-	@RequestMapping(value = "/getbooks", method = RequestMethod.GET)
-	public ModelAndView getStudentsList() {
+	@RequestMapping(value = "/getCSbooks", method = RequestMethod.GET)
+	public ModelAndView getCSBooksList() {
 		ModelAndView modelView = new ModelAndView("book-list");
 
-		List<Book> books = service.getBooks();
+		List<Book> books = service.getCSBooks();
 		modelView.addObject("bookList", books);
 		
 		return modelView;
 	}
+	
+	@RequestMapping(value = "/getNovelbooks", method = RequestMethod.GET)
+	public ModelAndView getBooksList() {
+		ModelAndView modelView = new ModelAndView("book-list");
+
+		List<Book> books = service.getNovelBooks();
+		modelView.addObject("bookList", books);
+		
+		return modelView;
+	}
+
 
 }

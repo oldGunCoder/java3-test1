@@ -3,9 +3,9 @@ package com.johnabbott.test1.model;
 
 public class Book {
 	
-	private String firstName;
-	private String lastName;
-	private int age;
+	private String genre;
+	private String name;
+	private int pageNumber;
 	
 	public Book() {
 		
@@ -13,31 +13,31 @@ public class Book {
 	
 	
 	
-	public Book(String firstName, String lastName, int age) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.age = age;
+	public Book(String genre, String name, int pageNumber) {
+		this.genre = genre;
+		this.name = name;
+		this.pageNumber = pageNumber;
 	}
 
 
 
-	public String getFirstName() {
-		return firstName;
+	public String getGenre() {
+		return genre;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setGenre(String genre) {
+		this.genre = genre;
 	}
-	public String getLastName() {
-		return lastName;
+	public String getName() {
+		return name;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public int getAge() {
-		return age;
+	public int getPageNumber() {
+		return pageNumber;
 	}
-	public void setAge(int age) {
-		this.age = age;
+	public void setPageNumber(int pageNumber) {
+		this.pageNumber = pageNumber;
 	}
 	
 	

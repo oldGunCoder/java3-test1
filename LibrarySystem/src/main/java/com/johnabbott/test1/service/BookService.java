@@ -8,3 +8,4 @@ public interface BookService {
 	public List<Book> getCSBooks();
 	public List<Book> getNovelBooks();
 }
+
